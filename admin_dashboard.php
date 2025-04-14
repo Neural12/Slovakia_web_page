@@ -1,11 +1,8 @@
 <?php 
       session_start();
-
       include 'conn.php';
-  
 
-      error_reporting(0);
-
+      // error_reporting(0);
       $admin_id = $_SESSION['admin_id'];
       if(!isset($admin_id)){
           header('Location: login.php');
