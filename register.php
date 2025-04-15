@@ -43,11 +43,11 @@
                 $mail->isSMTP();
                 $mail->Host = 'smtp.gmail.com';
                 $mail->SMTPAuth = true;
-                $mail->Username = 'tarvelweb@gmail.com';
-                $mail->Password = 'gzndncugxdpsjvlp';
+                $mail->Username = 'your_email';
+                $mail->Password = 'your_pass';
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
-                $mail->SetFrom('tarvelweb@gmail.com', 'UJS');
+                $mail->SetFrom('your_email');
                 $mail->addAddress($email, $firstname);
                 $mail->isHTML(true);
             
